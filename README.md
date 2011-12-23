@@ -26,9 +26,7 @@ Pass the `fields` param as a string only, do not pass an array of fields.
 #### List of fiddles
 http://doc.jsfiddle.net/api/fiddles.html
 
-**Field:** 
-
-* fiddles
+**Field:** fiddles
 
 **Conditions:**
 
@@ -54,9 +52,7 @@ $data = $this->Model->find('all', array(
 #### Get Current Logged-In Username
 http:/git/doc.jsfiddle.net/api/get_username.html
 
-**Field:**
-
-* user
+**Field:** user
 
 **Conditions:**
 none
