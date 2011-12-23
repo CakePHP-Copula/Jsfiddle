@@ -27,9 +27,11 @@ Pass the `fields` param as a string only, do not pass an array of fields.
 http://doc.jsfiddle.net/api/fiddles.html
 
 **Field:** 
+
 * fiddles
 
 **Conditions:**
+
 * **user:** required
 * callback: function name for the Xdomain (default: None). if no callback provided standard JSON will be returned
 * start: offset element (default: 0)
@@ -52,7 +54,8 @@ $data = $this->Model->find('all', array(
 #### Get Current Logged-In Username
 http:/git/doc.jsfiddle.net/api/get_username.html
 
-**Field:** 
+**Field:**
+
 * user
 
 **Conditions:**
