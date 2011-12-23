@@ -50,7 +50,7 @@ $data = $this->Model->find('all', array(
 ```
 
 #### Get Current Logged-In Username
-http:/git/doc.jsfiddle.net/api/get_username.html
+http://doc.jsfiddle.net/api/get_username.html
 
 **Field:** user
 
