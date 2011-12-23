@@ -7,7 +7,7 @@ Feel free to refer to the [JsFiddle Documentation](http://doc.jsfiddle.net/api/i
 
 3. Add your configuration to `database.php` and set it to the model
 
-<pre><code>
+```
 :: database.php ::
 var $jsfiddle = array(
 	'datasource' => 'Jsfiddle.Jsfiddle'
@@ -15,8 +15,7 @@ var $jsfiddle = array(
 
 :: my_model.php ::
 var $useDbConfig = 'Jsfiddle';
-
-</code></pre>
+```
 
 ## Commands
 
@@ -40,6 +39,7 @@ http://doc.jsfiddle.net/api/fiddles.html
 * framework: filter framework (default: None)
 		
 **Example:**
+
 ```
 $data = $this->Model->find('all', array(
 	'conditions' => array(
@@ -50,7 +50,7 @@ $data = $this->Model->find('all', array(
 ```
 
 #### Get Current Logged-In Username
-http://doc.jsfiddle.net/api/get_username.html
+http:/git/doc.jsfiddle.net/api/get_username.html
 
 **Field:** 
 * user
@@ -59,6 +59,7 @@ http://doc.jsfiddle.net/api/get_username.html
 none
 		
 **Example:**
+
 ```
 $data = $this->Model->find('all', array(
 	'fields' => 'user',
