@@ -30,4 +30,9 @@ class Jsfiddle extends ApisSource {
         $this->tokens = $queryData['conditions'];
         return parent::read($model, $queryData);
     }
+
+    public function beforeRequest($model, $request) {
+        $request['uri']['path'] .= '.' . $this->options['format'];
+        return $request;
+    }
 }
