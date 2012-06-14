@@ -32,8 +32,6 @@ class Jsfiddle extends ApisSource {
     }
 
     public function beforeRequest($model, $request) {
-        if (strpos($request['uri']['path'], 'get_username') === -1)
-            $request['uri']['path'] .= '.' . $this->options['format'];
         return $request;
     }
 }

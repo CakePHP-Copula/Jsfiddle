@@ -12,9 +12,9 @@ $config['Apis']['Jsfiddle']['hosts'] = array(
 );
 $config['Apis']['Jsfiddle']['read'] = array(
 	// field
-	'fiddles' => array(	
+	'fiddles' => array(
 		// http://doc.jsfiddle.net/api/fiddles.html
-		'api/user/:user/demo/list' => array(
+		'api/user/:user/demo/list.json' => array(
 			'user',
 			// optional conditions the api call can take
 			'optional' => array(
