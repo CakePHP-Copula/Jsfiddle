@@ -1,7 +1,7 @@
 <?php
 /**
  * Jsfiddle Driver for Apis Source
- * 
+ *
  * Makes usage of the Apis plugin by Proloser
  *
  * @package Jsfiddle Datasource
@@ -21,8 +21,8 @@ class Jsfiddle extends ApisSource {
     /**
      * Stores the queryData so that the tokens can be substituted just before requesting
      *
-     * @param string $model 
-     * @param string $queryData 
+     * @param string $model
+     * @param string $queryData
      * @return mixed $data
      * @author Dean Sofer
      */
@@ -32,7 +32,8 @@ class Jsfiddle extends ApisSource {
     }
 
     public function beforeRequest($model, $request) {
-        $request['uri']['path'] .= '.' . $this->options['format'];
+        if (strpos($request['uri']['path'], 'get_username') === -1)
+            $request['uri']['path'] .= '.' . $this->options['format'];
         return $request;
     }
 }
